@@ -27,12 +27,11 @@ console.log(tenNums);
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
-
 const myArray = [1, 6, 7, 8, 9, 10];
 
-const isOddNum = (num) => {
+function isOddNum(num) {
   return num % 2 === 0;
-};
+}
 
 const filteredNums = myArray.filter(isOddNum);
 
@@ -42,17 +41,10 @@ console.log(filteredNums);
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-// let result = 0;
-
-// const arrayOfNums = [1, 2, 3, 4];
-// arrayOfNums.forEach((num) => {
-//   return (result += num);
-// });
-
-// console.log(result);
+let result = 0;
 
 const arrayOfNums = [1, 2, 3, 4];
-const result = arrayOfNums.forEach((num) => {
+arrayOfNums.forEach((num) => {
   return (result += num);
 });
 
@@ -75,8 +67,8 @@ console.log(sum(arrayOfNums));
 */
 
 const array1 = [1, 2, 3];
-const arrayPlusN = (anyArray, n) => {
-  const resultArray = anyArray.map((num) => num + n);
+const arrayPlusN = (arrayqualsiasi, n) => {
+  const resultArray = arrayqualsiasi.map((num) => num + n);
   return resultArray;
 };
 
